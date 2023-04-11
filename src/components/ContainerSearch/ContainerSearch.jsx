@@ -5,7 +5,7 @@ import SearchInformation from "../SearchInformation/SearchInformation"
 
 
 const  ContainerSearch = () =>{
-    return(<div>
+    return(<div className="ContainerSearch">
        <SearchPrompt/>
        <SearchInformation/>
     </div>)

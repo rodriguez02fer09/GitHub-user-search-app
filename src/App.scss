@@ -1,0 +1,63 @@
+$font-stack:'Space Mono', monospace;
+
+
+
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	text-align: center;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* VARIABLES */
+* {
+	/* LIGHT MODE COLORS*/
+--primary-color-light: #0079ff;
+--secundary-color-light: #697c9a;
+--tertiary-color-light: #4b6a9b;
+--four-color-light: #2b3442;
+--five-color-light: #f6f8ff;
+--five-color-light:#fefefe;
+--six-color-light:#F2F2F2;
+}
+/* VARIABLES */
+* {
+	/* DARK MODE COLORS*/
+--primary-color-dark: #0079ff;
+--secundary-color-dark: #ffff;
+--tertiary-color-dark: #141d2f;
+--four-color-darkt: #1e2a47;
+
+}
+h1{
+  $font-stack:'Space Mono', monospace;
+  font-style: Bold;
+  font-size: 26px;
+  line-height: 38px;
+
+}
+h2{
+  $font-stack:'Space Mono', monospace;
+  font-style: Bold;
+  font-size: 22px;
+  line-height: 33px;
+
+}
+h3{
+  $font-stack:'Space Mono', monospace;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h4{
+  $font-stack:'Space Mono', monospace;
+  font-style: Regular;
+  font-size: 13px;
+  line-height: 20px;
+}

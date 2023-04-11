@@ -4,7 +4,7 @@ import  ContainerSearch from "../ContainerSearch/ContainerSearch";
 
 const Layout  =()=> {
 return(
-    <div>
+    <div className="layout">
      <ContainerSearch/>
     </div>
 )
