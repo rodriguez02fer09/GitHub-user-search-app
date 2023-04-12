@@ -1,0 +1,69 @@
+.containprofile {
+  width: 480xpx;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .containprofile__profile {
+    width: 240px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+   
+ 
+
+    h1 {
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 38px;
+      color: (--four-color-light);
+    }
+    h3{
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #0079FF;
+        padding-bottom: 16px;
+        
+    }
+    h4{
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        /* identical to box height, or 167% */
+        color: #4B6A9B;
+        mix-blend-mode: normal;
+        opacity: 0.75;
+    }
+  }
+  .contain__date {
+    width: 166px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 48px;
+    margin-top: 52px;
+
+    h4 {
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 22px;
+      text-align: right;
+      color: #697c9a;
+    }
+  }
+}
