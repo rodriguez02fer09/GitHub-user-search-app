@@ -1,12 +1,14 @@
 import React from "react";
 import "./searchPrompt.scss";
+import shape from "../../assets/shape.svg"
 
 const SearchPrompt = () => {
   return (
     <div className="SearchPrompt">
       <div className="SearchPrompt_container">
-        <input  className="SearchPrompt_container__input"type="search" id="search" name="search" />
-        <button className="SearchPrompt_container__button" type="submit">Enviar</button>
+        <input  className="SearchPrompt_container__input" placeholder = "Search GitHub username..."type="search" id="search" name="search" />
+        <img className = "SearchPrompt_container__img"src={shape} alt="" />
+        <button className="SearchPrompt_container__button" type="submit">Search</button>
       </div>
     </div>
   );
