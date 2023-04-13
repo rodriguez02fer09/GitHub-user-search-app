@@ -1,0 +1,17 @@
+.main-socialNetwork {
+  width: 480px;
+  height: 90px;
+  background-color: #fefefe;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  p {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #4b6a9b;
+  }
+}
