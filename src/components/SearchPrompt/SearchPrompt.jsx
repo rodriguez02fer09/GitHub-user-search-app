@@ -6,7 +6,7 @@ const SearchPrompt = () => {
   return (
     <div className="SearchPrompt">
       <div className="SearchPrompt_container">
-        <input  className="SearchPrompt_container__input" placeholder = "Search GitHub username..."type="search" id="search" name="search" />
+        <input  className="SearchPrompt_container__input" placeholder = "Search GitHub username..."type="text" id="search" name="search" />
         <img className = "SearchPrompt_container__img"src={shape} alt="" />
         <button className="SearchPrompt_container__button" type="submit">Search</button>
       </div>

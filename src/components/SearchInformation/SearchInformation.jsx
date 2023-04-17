@@ -1,17 +1,16 @@
 import React from "react";
-import "./searchInformation.scss"
-import Followers from "../Followers/Followers";
+import "./searchInformation.scss";
 import Profile from "../Profile/Profile";
-import SocialNetwork from "../SocialNetwork/SocialNetwork"
- 
-const SearchInformation = () => {
-    return( 
-    <div className="SearchInformation">
-    <Profile/>
-    <Followers/>
-    <SocialNetwork/>
-        </div>
-    )
-}
+import ContainerFollSocial from "../ContainerFollSocial/ContainerFollSocial";
 
-export default SearchInformation ;
+const SearchInformation = ({redSocial , img}) => {
+  
+  return (
+    <div className="SearchInformation">
+      <Profile />
+      <ContainerFollSocial redSocial={redSocial} img={img}/>
+    </div>
+  );
+};
+
+export default SearchInformation;

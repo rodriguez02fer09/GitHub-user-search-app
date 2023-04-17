@@ -1,9 +1,44 @@
-.main-followers{
-width: 480px;
-height: 85px;
-background-color:#f6f8ff ;
-border-radius: 10px;
-display: flex;
-flex-direction: column;
-justify-content: center;
+.main-followers {
+  width: 480px;
+  height: 85px;
+  background-color: #f6f8ff;
+  border-radius: 10px;
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  align-items: center;
+  padding: 15px  83px 17px 32px;
+
+  .main-followers__info {
+    width: auto;
+    height: 53px;
+text-align: left;
+   
+
+    
+  }
+  .main-followers__info p:first-child {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #4b6a9b;
+    text-align: left;
+   
+  }
+  .main-followers__info p:last-child {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    /* identical to box height */
+    text-align: left;
+   
+
+    text-transform: uppercase;
+
+    color: #2b3442;
+  }
 }

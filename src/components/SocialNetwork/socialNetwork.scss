@@ -1,17 +1,32 @@
-.main-socialNetwork {
+.main-socialnetwork {
   width: 480px;
-  height: 90px;
+  height: 92px;
   background-color: #fefefe;
+  margin-top: 37px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .main-socialnetwork__info {
+    width: 50%;
+    height: 22px;
+    display: flex;
+    justify-content: start;
+
+    .main-socialnetwork > div:nth-child(1),
+    .main-socialnetwork > div:nth-child(3) {
   border: 1px solid red;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+}
   
-  p {
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 22px;
-    color: #4b6a9b;
+    img {
+      margin-right: 16px;
+    }
+    p {
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 22px;
+      color: #4b6a9b;
+    }
   }
 }
