@@ -1,0 +1,50 @@
+.container-mode {
+  width: 730px;
+  height: 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .container-mode__title {
+    width: 128px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    p {
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 39px;
+      /* identical to box height */
+
+      color: #222731;
+    }
+  }
+  .container-mode__dark {
+    width: 78px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 19px;
+      text-align: right;
+      letter-spacing: 2.5px;
+      color: #222731;
+
+    }
+    img{
+        width: 20px;
+        height: 20px;
+      
+    }
+    img:hover{
+        cursor: pointer;
+    }
+  }
+}
