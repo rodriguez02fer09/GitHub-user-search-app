@@ -1,10 +1,9 @@
 import React from "react";
 import "./followers.scss";
 
-const Followers = ({ infoFollowers }) => {
+const Followers = ({ infoFollowers, isDark }) => {
   return (
-    <div className=  "main-followers" >
-     
+    <div className={`main-followers  ${isDark ? "dark" : ""}`} >
       {infoFollowers.map(({ nameFollowers, count }, index) => {
         return (
           <div className="main-followers__info " key={index}>

@@ -6,9 +6,9 @@ import ContainerFollSocial from "../ContainerFollSocial/ContainerFollSocial";
 const SearchInformation = ({redSocial , img , isDark }) => {
   
   return (
-    <div className="SearchInformation">
+    <div className="SearchInformation" isDark={isDark}>
       <Profile />
-      <ContainerFollSocial redSocial={redSocial} img={img}/>
+      <ContainerFollSocial redSocial={redSocial} img={img} isDark={isDark} />
     </div>
   );
 };

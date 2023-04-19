@@ -9,7 +9,7 @@ const ContainerInformation = ({isDark}) => {
   return (
     <div className={`containerInformation ${isDark ? "dark" : ""}`} >
       <ProfileImg />
-      <SearchInformation />
+      <SearchInformation  isDark={isDark}/>
     </div>
   );
 };

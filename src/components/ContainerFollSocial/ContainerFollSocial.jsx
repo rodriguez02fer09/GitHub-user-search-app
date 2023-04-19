@@ -22,8 +22,8 @@ const ContainerFollSocial = ({isDark}) => {
   ]
   return (
     <div className="ContainerFollSocial">
-      <Followers infoFollowers={infoFollowers } isDark={isDark}/>
-      <SocialNetwork infoSocialNetwork={infoSocialNetwork}  isDark={isDark}/>
+      <Followers infoFollowers={infoFollowers }  isDark={isDark}/>
+      <SocialNetwork infoSocialNetwork={infoSocialNetwork} isDark={isDark} />
     </div>
   );
 };

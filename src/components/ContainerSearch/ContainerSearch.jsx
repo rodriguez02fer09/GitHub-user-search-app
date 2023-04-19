@@ -10,7 +10,7 @@ const ContainerSearch = ({isDark , toggleDarkMode}) => {
   return (
     <div className="containerSearch">
       <Mode isDark={isDark} toggleDarkMode={toggleDarkMode} />
-      <SearchPrompt isDark={isDark}   />
+      <SearchPrompt isDark={isDark}  />
       <SearchInformation isDark={isDark} />
     </div>
   );
