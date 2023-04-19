@@ -5,9 +5,9 @@ import SearchInformation from "../SearchInformation/SearchInformation";
 
 
 
-const ContainerInformation = () => {
+const ContainerInformation = ({isDark}) => {
   return (
-    <div className="containerInformation">
+    <div className={`containerInformation ${isDark ? "dark" : ""}`} >
       <ProfileImg />
       <SearchInformation />
     </div>

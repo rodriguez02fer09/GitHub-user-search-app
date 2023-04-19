@@ -3,7 +3,8 @@ import "./followers.scss";
 
 const Followers = ({ infoFollowers }) => {
   return (
-    <div className="main-followers">
+    <div className=  "main-followers" >
+     
       {infoFollowers.map(({ nameFollowers, count }, index) => {
         return (
           <div className="main-followers__info " key={index}>

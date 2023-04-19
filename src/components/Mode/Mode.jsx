@@ -1,20 +1,20 @@
 import React from "react";
-import "./mode.scss"
+import "./mode.scss";
 import imgDark from "../../assets/dark.svg"
+import imgLight from "../../assets/light.svg"
 
-const Mode =()=> {
-return(<div className="container-mode">
-    <div className="container-mode__title" >
-    <p>devfinder</p>
+
+const Mode = ({ isDark, toggleDarkMode}) => {
+  return (
+    <div className={`container-mode ${isDark ? "dark" : ""}`}  >
+       <div className={`container-mode__title ${isDark ? "dark" : ""}`}>
+      <p>devfinder</p>
     </div>
-    <div className="container-mode__dark">
-        <p>DARK</p>
-        <img src={imgDark} alt="" />
+    <div className={`container-mode__dark ${isDark ? "dark" : ""}`}>
+      <p>{isDark ? "LIGHT" : "DARK"}</p>
+      <img src={ isDark ? imgLight:imgDark  } onClick={toggleDarkMode} />
     </div>
-
-
-</div>)
-
-}
-
+  </div>
+  );
+};
 export default Mode;

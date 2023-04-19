@@ -1,7 +1,7 @@
 import React from "react";
 import "./socialNetwork.scss";
 
-const socialNetwork = ({ infoSocialNetwork }) => {
+const SocialNetwork = ({ infoSocialNetwork, isDark  }) => {
   return (
     <div className="main-socialnetwork">
       {infoSocialNetwork.map(({name ,img}, index) => {
@@ -16,4 +16,4 @@ const socialNetwork = ({ infoSocialNetwork }) => {
   );
 };
 
-export default socialNetwork;
+export default SocialNetwork;

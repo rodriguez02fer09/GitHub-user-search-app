@@ -4,18 +4,16 @@
   background-color: #f6f8ff;
   border-radius: 10px;
   display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  padding: 15px  83px 17px 32px;
+  padding: 15px 83px 17px 32px;
 
+  
   .main-followers__info {
     width: auto;
     height: 53px;
-text-align: left;
-   
-
-    
+    text-align: left;
   }
   .main-followers__info p:first-child {
     font-family: "Space Mono";
@@ -25,7 +23,6 @@ text-align: left;
     line-height: 19px;
     color: #4b6a9b;
     text-align: left;
-   
   }
   .main-followers__info p:last-child {
     font-family: "Space Mono";
@@ -35,7 +32,6 @@ text-align: left;
     line-height: 33px;
     /* identical to box height */
     text-align: left;
-   
 
     text-transform: uppercase;
 

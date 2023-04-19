@@ -7,7 +7,7 @@ import Twiter from "../../assets/twiter.svg"
 import Link from "../../assets/link.svg"
 import GitHub from "../../assets/gitHub.svg"
 
-const ContainerFollSocial = () => {
+const ContainerFollSocial = ({isDark}) => {
   const infoSocialNetwork = [
     { name: "San Francisco", img:Location },
     { name: "No Aviable", img:Twiter },
@@ -22,8 +22,8 @@ const ContainerFollSocial = () => {
   ]
   return (
     <div className="ContainerFollSocial">
-      <Followers infoFollowers={infoFollowers}/>
-      <SocialNetwork infoSocialNetwork={infoSocialNetwork}  />
+      <Followers infoFollowers={infoFollowers } isDark={isDark}/>
+      <SocialNetwork infoSocialNetwork={infoSocialNetwork}  isDark={isDark}/>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import "./searchInformation.scss";
 import Profile from "../Profile/Profile";
 import ContainerFollSocial from "../ContainerFollSocial/ContainerFollSocial";
 
-const SearchInformation = ({redSocial , img}) => {
+const SearchInformation = ({redSocial , img , isDark }) => {
   
   return (
     <div className="SearchInformation">
