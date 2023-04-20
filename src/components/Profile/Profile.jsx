@@ -1,10 +1,10 @@
 import React from "react";
 import "./profile.scss";
 
-const Profile = () => {
+const Profile = ({isDark}) => {
   return (
     <div className="containprofile">
-      <div className="containprofile__profile">
+      <div className={`containprofile__profile ${isDark ? "dark" : ""}`} >
         <h1>The Octocat</h1>
         <h3>@octocat</h3>
         <h4>This profile has no bio</h4>

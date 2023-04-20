@@ -4,10 +4,10 @@ import Profile from "../Profile/Profile";
 import ContainerFollSocial from "../ContainerFollSocial/ContainerFollSocial";
 
 const SearchInformation = ({redSocial , img , isDark }) => {
-  
+
   return (
     <div className="SearchInformation" isDark={isDark}>
-      <Profile />
+      <Profile isDark={isDark}/>
       <ContainerFollSocial redSocial={redSocial} img={img} isDark={isDark} />
     </div>
   );
