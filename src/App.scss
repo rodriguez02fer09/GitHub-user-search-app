@@ -12,7 +12,9 @@ $font-stack:'Space Mono', monospace;
 	font-family: 'Roboto', sans-serif;
 
 }
-
+body{
+  overflow: hidden;
+}
 
 /* VARIABLES */
 * {
