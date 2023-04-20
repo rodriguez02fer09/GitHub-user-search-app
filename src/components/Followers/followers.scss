@@ -8,16 +8,16 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 83px 17px 32px;
-&.dark{
+&--dark{
   background-color: #141d2f
 }
   
-  .main-followers__info {
+  &__info {
     width: auto;
     height: 53px;
     text-align: left;
   }
-  .main-followers__info p:first-child {
+  &__info p:first-child {
     font-family: "Space Mono";
     font-style: normal;
     font-weight: 400;
@@ -26,7 +26,7 @@
     color: #4b6a9b;
     text-align: left;
   }
-  .main-followers__info p:last-child {
+  &__info p:last-child {
     font-family: "Space Mono";
     font-style: normal;
     font-weight: 700;
@@ -39,4 +39,18 @@
 
     color: #2b3442;
   }
+  &--dark{
+    .main-followers{
+      background-color: #141d2f;
+      &__info p:first-child{
+        color: #FFFFFF;
+      }
+      &__info p:last-child{
+        color: #FFFFFF;
+      }
+    }
+   
+  
+  }
+
 }

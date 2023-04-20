@@ -4,6 +4,7 @@ import shape from "../../assets/shape.svg"
 
 
 
+
 const SearchPrompt = ({ isDark }) => {
   const defaultClass = `search-prompt`
   const custonClass = `${isDark ? `${defaultClass}--dark`: `${defaultClass}`}`

@@ -1,4 +1,4 @@
-.containerInformation{
+.container-information{
 width: 730px;
 height: 419px;
 background: #FEFEFE;
@@ -9,7 +9,7 @@ margin-top: 24px;
 display: flex;
 flex-direction: row;
 
-&.dark{
+&--dark{
     background: #1E2A47;
 
 }
