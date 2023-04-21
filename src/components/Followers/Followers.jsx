@@ -1,8 +1,7 @@
 import React from "react";
 import "./followers.scss";
 
-const Followers = ({ infoFollowers, isDark }) => {
-
+const Followers = ({ infoFollowers, isDark}) => {
   const defaultClass = `main-followers`
   const custonClass = `${isDark ? `${defaultClass}--dark`: `${defaultClass}`}`
   return (

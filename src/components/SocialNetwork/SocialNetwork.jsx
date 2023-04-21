@@ -1,11 +1,14 @@
 import React from "react";
 import "./socialNetwork.scss";
 
-const SocialNetwork = ({ infoSocialNetwork, isDark  }) => {
+const SocialNetwork = ({ infoSocialNetwork, isDark}) => {
+
   const defaultClass = `main-socialnetwork`
   const custonClass = `${isDark ? `${defaultClass}--dark`: `${defaultClass}`}`
+
+
   return (
-    <div className={`${defaultClass} ${custonClass}`} >
+    <div className={`${defaultClass} ${custonClass}`}   >
       {infoSocialNetwork.map(({name ,img}, index) => {
         return (
           <div key ={index} className={`${defaultClass}__info ${custonClass}__info`}>
