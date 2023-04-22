@@ -24,7 +24,7 @@ const Profile = ({ isDark, data }) => {
       </div>
 
       <div className={`${defaultClass}__biography ${custonClass}__biography`}>
-        <h4>{bio}</h4>
+        <h2>{bio}</h2>
       </div>
     </div>
   );
