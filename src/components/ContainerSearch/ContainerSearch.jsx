@@ -13,7 +13,7 @@ const ContainerSearch = ({ isDark, toggleDarkMode }) => {
   const apiGitHub = () => {
     fetch(`https://api.github.com/users/${user}`, {
       headers: {
-        Authorization: `Bearer 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`,
+        Authorization: `Bearer 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`,
       },
     })
       .then((response) => {
