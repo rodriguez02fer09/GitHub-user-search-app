@@ -1,16 +1,17 @@
-.search-prompt{
+.search-prompt {
   width: 730px;
   height: 73px;
   display: flex;
-  justify-content: center;
+
   margin-top: 40px;
 
   &__container {
     width: 730px;
     height: 70px;
+    position: relative;
   }
 
-  &__container-input{
+  &__container-input {
     width: 730px;
     height: 69px;
     background-color: var(--five-color-light);
@@ -38,7 +39,7 @@
     color: #4b6a9b;
   }
 
-  &__container-button{
+  &__container-button {
     width: 106px;
     height: 50px;
     background-color: var(--primary-color-light);
@@ -51,33 +52,46 @@
     border: none;
     color: var(--secundary-color-dark);
     position: relative;
-    left: 288px;
-    bottom: 59px;
+    left: 280px;
+    bottom: 60px;
   }
 
-  &__container-button:hover{
+  &__container-button:hover {
     cursor: pointer;
   }
-  &__container-img{
+  &__container-img {
     width: 24px;
-      height: 26px;
-      position: relative;
-      right: 268px;
-      bottom: 52px;
+    height: 26px;
+    position: relative;
+    right: 270px;
+    bottom: 50px;
 
-      color: var (--primary-color-light);
+    color: var (--primary-color-light);
   }
 
   &--dark {
-    &__container-input{
+    &__container-input {
       background-color: #1e2a47;
       color: white;
     }
 
     &__container-input::placeholder {
       color: white;
+    }
+  }
+  &__error {
+    width: 92px;
+    height: 22px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #f74646;
+
+    position: absolute;
+    left: 500px;
+    top: 23px;
 
     }
-
-  }
 }

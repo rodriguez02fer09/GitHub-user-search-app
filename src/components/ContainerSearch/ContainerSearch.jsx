@@ -8,26 +8,28 @@ import Mode from "../Mode/Mode";
 const ContainerSearch = ({ isDark, toggleDarkMode }) => {
   const [data, setData] = useState({});
   const [user, setUser] = useState("");
+  const [notFound, setNotFound] = useState(false);
 
   const apiGitHub = () => {
-    fetch(
-      `https://api.github.com/users/${user}`,
-
-      {
-        headers: {
-          Authorization: `Bearer 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`,
-        },
-      }
-    )
-      .then((response) => response.json())
+    fetch(`https://api.github.com/users/${user}`, {
+      headers: {
+        Authorization: `Bearer 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`,
+      },
+    })
+      .then((response) => {
+        if(response.status === 404){
+          setNotFound(true);
+        }
+        return response.json()
+      })
       .then((data) => {
         setData(data);
-        console.log(data);
+          console.log(data);
       })
       .catch((error) => console.error(error));
   };
-
   const searchPrompt = ({ target }) => {
+    setNotFound(false);
     setUser(() => target.value);
   };
 
@@ -38,6 +40,7 @@ const ContainerSearch = ({ isDark, toggleDarkMode }) => {
         isDark={isDark}
         onChange={searchPrompt}
         onClick={apiGitHub}
+        notFound={notFound}
       />
       <SearchInformation isDark={isDark} data={data} />
     </div>
