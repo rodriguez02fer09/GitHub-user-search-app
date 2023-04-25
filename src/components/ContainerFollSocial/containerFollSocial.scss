@@ -3,3 +3,10 @@ width: 480px;
 height:185px ;
 margin-top: 25px;
 }
+@media (max-width: 768px){
+    .Container-follSocial{
+        margin-bottom: 62px;
+        display: flex;
+    flex-direction: column;
+    } 
+}

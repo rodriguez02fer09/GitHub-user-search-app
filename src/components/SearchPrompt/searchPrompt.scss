@@ -77,8 +77,6 @@
 
     &__container-input::placeholder {
       color: white;
-    
-
     }
   }
   &__error {
@@ -94,6 +92,45 @@
     position: absolute;
     left: 500px;
     top: 23px;
+  }
+}
 
+@media (max-width: 768px) {
+  /*Los estilos se aplican para pantallas de ancho menor o igual al especificado */
+
+  .search-prompt {
+    width: 573px;
+    height: 69px;
+    &__container {
+      width: 573px;
+      height: 69px;
+      position: relative;
     }
+    &__container-input {
+      width: 573px;
+      height: 69px;
+    }
+    &__container-button {
+      width: 106px;
+      height: 50px;
+      left: 207px;
+      bottom: 60px;
+    }
+    &__container-img {
+      right: 194px;
+      bottom: 51px;
+    }
+
+    &--dark {
+      &__container-input {
+        background-color: #1e2a47;
+        color: white;
+      }
+  
+      &__container-input::placeholder {
+        color: white;
+      }
+    }
+   
+  }
 }

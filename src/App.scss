@@ -1,7 +1,7 @@
 $font-stack:'Space Mono', monospace;
 
 #root {
-	max-width: 1280px;
+
 	margin: 0 auto;
 	text-align: center;
 }
@@ -12,11 +12,8 @@ $font-stack:'Space Mono', monospace;
 	font-family: 'Roboto', sans-serif;
 
 }
-body{
-  overflow: hidden;
-}
 
-/* VARIABLES */
+  /* VARIABLES */
 * {
 	/* LIGHT MODE COLORS*/
 --primary-color-light: #0079ff;

@@ -4,11 +4,21 @@
     margin-top: 48px;
     margin-left: 48px;
     margin-right: 37px;
+  
 
     img{
 width: 117px;
 height: 117px;
 border-radius: 50%;
+
+    }
+}
+@media (max-width: 768px) {
+    .main-profile{
+      
+        position: absolute;
+        left: 86px;
+        top: 329px;
 
     }
 }

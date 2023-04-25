@@ -14,3 +14,17 @@ flex-direction: row;
 
 }
 }
+
+@media (max-width: 768px) {
+    .container-information{
+        width: 573px;
+        height: 481px;
+
+        &--dark{
+            background: #1E2A47;
+        
+        }
+    }
+
+
+}

@@ -54,3 +54,13 @@
     }
   }
 }
+
+
+@media (max-width: 768px) {
+  /*Los estilos se aplican para pantallas de ancho menor o igual al especificado */
+  .container-mode{
+    width: 530px;
+
+}
+
+}

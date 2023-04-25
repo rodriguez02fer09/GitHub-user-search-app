@@ -9,3 +9,14 @@
         background-color:#000000;
     }
 }
+
+
+@media (max-width: 768px) {
+    /*Los estilos se aplican para pantallas de ancho menor o igual al especificado */
+    .containerSearch{
+    width: 573px;
+    height: 648px;
+
+
+}
+  }
