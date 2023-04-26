@@ -102,15 +102,11 @@
   .contain-profile {
     height: 178px;
 
-
     &__cont-profile {
       flex-direction: column;
       align-items: center;
-     
-      .contain-profile__profile {
-     
-  
 
+      .contain-profile__profile {
         h3 {
           font-family: "Space Mono";
           font-style: normal;
@@ -122,23 +118,69 @@
           margin-bottom: 4px;
         }
       }
-  
     }
     .contain-profile__date {
       margin-right: 73px;
       margin-top: 0px;
-
     }
     &__biography {
       width: 480px;
       height: 100px;
       margin-top: 24px;
-  
-      
     }
   }
- 
+}
+@media (max-width: 400px) {
+  .contain-profile {
+    width: 279px;
+    height: 360px;
+    background: orangered;
+    align-items: center;
 
-  
-  
+   
+    &__cont-profile {
+      width: 144px;
+      height: 69px;
+      
+      .contain-profile__profile {
+        width: 144px;
+        height: 69px;
+    
+
+        h1 {
+          font-size: 16px;
+          line-height: 24px;
+          /* identical to box height */
+        }
+        h3 {
+          font-size: 13px;
+          line-height: 19px;
+          /* identical to box height */
+        }
+      }
+      .contain-profile__date {
+        width: 208px;
+        height: 19px;
+
+    
+        h4 {
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 19px;
+        }
+
+      }
+      
+      
+    }
+    &__biography {
+      width: 279px;
+      height: 75px;
+   h2{
+    font-weight: 400;
+font-size: 13px;
+line-height: 25px;
+   }
+    }
+  }
 }

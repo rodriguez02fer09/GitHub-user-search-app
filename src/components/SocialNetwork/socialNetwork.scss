@@ -96,3 +96,26 @@
     }
   }
 }
+@media (max-width: 400px){
+  .main-socialnetwork {
+    width: 185px;
+    height: 127px;
+
+    &__info {
+      width: 137px;
+      height: 20px;
+      justify-content: flex-start;
+      align-items: center;
+      img {
+        margin-right: 16px;
+      }
+      p {
+        font-weight: 400;
+font-size: 13px;
+line-height: 19px;
+       
+      }
+      
+    }
+  }
+}

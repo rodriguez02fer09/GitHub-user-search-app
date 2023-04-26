@@ -10,13 +10,23 @@
     }
 }
 
-
 @media (max-width: 768px) {
     /*Los estilos se aplican para pantallas de ancho menor o igual al especificado */
     .containerSearch{
     width: 573px;
     height: 648px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    /*Los estilos se aplican para pantallas de ancho menor o igual al especificado */
+    .containerSearch{
+   width: 380px;
+   height: 739px;
+background: fuchsia;
 
 
 }
   }
+
+  

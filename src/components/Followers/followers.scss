@@ -56,8 +56,24 @@
 }
 @media (max-width: 768px){
   .main-followers{
-margin-bottom: 30px;
-margin-top: 15px;
+margin-bottom: 23px;
+
+  }
+
+
+}
+
+@media (max-width: 400px){
+  .main-followers{
+width: 279px;
+padding: 18px 14px 19px 15px;
+
+
+&__info {
+  width: 79px;
+  height: 48px;
+ margin: 18px 14px 19px 10px;
+}
   }
 
 

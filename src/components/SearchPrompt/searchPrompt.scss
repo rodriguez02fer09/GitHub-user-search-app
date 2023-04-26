@@ -134,3 +134,40 @@
    
   }
 }
+
+@media (max-width: 400px) {
+  /*Los estilos se aplican para pantallas de ancho menor o igual al especificado */
+  .search-prompt{
+ width: 327px;
+background: #f74646;
+margin-top: 30px;
+
+&__container {
+  width: 327px;
+  height: 69px;
+  position: relative;
+}
+&__container-input {
+  width: 327px;
+  height: 69px;
+  padding-left: 52px;
+}
+&__container-button {
+  width: 84px;
+  height: 46px;
+  left: 102px;
+  bottom: 58px;
+}
+&__container-img {
+  right: 90px;
+  bottom: 51px;
+}
+&__container-input::placeholder {
+  
+  font-size: 13px;
+ 
+
+}
+}
+}
+

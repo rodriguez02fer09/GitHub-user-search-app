@@ -64,3 +64,15 @@
 }
 
 }
+  
+@media (max-width: 400px) {
+  /*Los estilos se aplican para pantallas de ancho menor o igual al especificado */
+  .container-mode{
+ width: 327px;
+ height: 38px;
+background: bisque;
+
+
+}
+}
+

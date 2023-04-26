@@ -12,7 +12,6 @@
         width: 573px;
         height: 481px;
 
-
         align-items: center;
         &--dark{
             background: #1E2A47;
@@ -20,5 +19,15 @@
         }
     }
 
+
+}
+@media (max-width: 400px) {
+  .SearchInformation {
+        width: 327px;
+        height:517px;
+        justify-content: space-around;
+
+
+  }
 
 }
