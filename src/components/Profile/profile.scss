@@ -101,7 +101,7 @@
 @media (max-width: 768px) {
   .contain-profile {
     height: 178px;
-    background: palegreen;
+
 
     &__cont-profile {
       flex-direction: column;
@@ -129,7 +129,13 @@
       margin-top: 0px;
 
     }
-   
+    &__biography {
+      width: 480px;
+      height: 100px;
+      margin-top: 24px;
+  
+      
+    }
   }
  
 

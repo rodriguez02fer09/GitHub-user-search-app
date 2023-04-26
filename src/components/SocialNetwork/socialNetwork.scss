@@ -57,17 +57,42 @@
   &--dark {
     background: #1e2a47;
     p {
-    color: white;
+      color: white;
     }
-    img{
+    img {
       color: white;
     }
   }
 }
 
 @media (max-width: 768px) {
-  .main-socialnetwork{
-    
-  }
+  .main-socialnetwork {
+    width: 429px;
+    height: 64px;
 
+    &__info {
+      justify-content: flex-start;
+      align-items: center;
+
+      img {
+        margin-right: 16px;
+      }
+      p {
+        font-family: "Space Mono";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        color: #4b6a9b;
+      }
+    }
+    &__info:nth-child(2),
+    &__info:nth-child(4) {
+      padding-left: 82px;
+    }
+    &__info:nth-child(3),
+    &__info:nth-child(4) {
+      margin-top: 20px;
+    }
+  }
 }
