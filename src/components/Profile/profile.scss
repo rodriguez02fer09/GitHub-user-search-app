@@ -13,7 +13,9 @@
     height: 105px;
     display: flex;
     justify-content: space-between;
-
+    .contain-profile__img {
+      display: none;
+    }
     .contain-profile__profile {
       width: 240px;
       height: 120px;
@@ -106,7 +108,9 @@
     &__cont-profile {
       flex-direction: column;
       align-items: center;
-
+      .contain-profile__img {
+        display: none;
+      }
       .contain-profile__profile {
         h3 {
           font-family: "Space Mono";
@@ -135,7 +139,7 @@
   .contain-profile {
     width: 279px;
     height: 360px;
-    justify-content:start;
+    justify-content: start;
     align-items: center;
     margin: 0px;
 
@@ -147,26 +151,22 @@
       flex-direction: row;
       background-color: #0079ff;
 
-      .contain-profile__img {
+      &__img {
         width: 70px;
         height: 70px;
-        margin-right:20px ;
+        margin-right: 20px;
+        display: flex;
         img {
           width: 70px;
           height: 70px;
           border-radius: 50%;
-     
         }
       }
-      .contain-profile__profile {
-       background: rosybrown;
-
-justify-content: baseline;
-       height: 70px;
-   
+      &__profile {
+        justify-content: baseline;
+        height: 70px;
 
         h1 {
-          
           font-weight: 700;
           font-size: 16px;
           line-height: 24px;
@@ -178,7 +178,7 @@ justify-content: baseline;
           /* identical to box height */
         }
       }
-      .contain-profile__date {
+      &__date {
         width: 144px;
         height: 19px;
 
