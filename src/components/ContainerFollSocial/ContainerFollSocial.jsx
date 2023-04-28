@@ -8,8 +8,9 @@ import Link from "../../assets/link.svg"
 import GitHub from "../../assets/gitHub.svg"
 
 import LocationDark from "../../assets/location-dark.svg"
-import TwiterDark from "../../assets/twiter-dark.svg"
+
 import LinkDark from "../../assets/link-dark.svg"
+import TwiterDark from "../../assets/twiter-dark.svg"
 import GitHubDark from "../../assets/github-dark.svg"
 const ContainerFollSocial = ({isDark, data}) => {
   
@@ -19,8 +20,9 @@ const {dataLocation= "No Aviable", dataTwiter = "No Aviable" , dataLink= "No Avi
 
   const infoSocialNetwork = [
     { name: dataLocation, img: isDark ? LocationDark :Location},//location
-    { name: dataTwiter, img: isDark ? TwiterDark :Twiter},//Twiter
+   
     { name: dataLink, img:isDark ? LinkDark: Link},//Link
+    { name: dataTwiter, img: isDark ? TwiterDark :Twiter},//Twiter
     { name: dataGitHub, img: isDark? GitHubDark: GitHub },//GitHub
   ];
 
