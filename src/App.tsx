@@ -3,13 +3,12 @@ import Layout from "./components/Layout/Layout"
 
 import './App.scss'
 
-function App() {
+const  App = () JSX.Element => {
 
 
   return (
     <div className="App">
      <Layout/>
-    
     </div>
   )
 }
