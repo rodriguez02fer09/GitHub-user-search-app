@@ -1,18 +1,18 @@
-import React from "react";
-import "./profile.scss";
-import imgProfile from "../../assets/imgProfile.svg";
+import React from 'react'
+import './profile.scss'
+import imgProfile from '../../assets/ImgProfile.tsx'
 
-const Profile = ({ isDark, data }) => {
-  const { avatar_url = imgProfile } = data;
+const Profile = ({isDark, data}) => {
+  const {avatar_url = imgProfile} = data
   const {
-    name = "The Octocat",
-    login = "@octocat",
-    bio = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.",
-    created_at = "Joined 25 Jan 2011",
-  } = data;
+    name = 'The Octocat',
+    login = '@octocat',
+    bio = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.',
+    created_at = 'Joined 25 Jan 2011',
+  } = data
 
-  const defaultClass = `contain-profile`;
-  const custonClass = `${isDark ? `${defaultClass}--dark` : `${defaultClass}`}`;
+  const defaultClass = `contain-profile`
+  const custonClass = `${isDark ? `${defaultClass}--dark` : `${defaultClass}`}`
   return (
     <div className={`${defaultClass} ${custonClass}`}>
       {/* destok-tablet */}
@@ -59,6 +59,6 @@ const Profile = ({ isDark, data }) => {
         <h2>{bio}</h2>
       </div>
     </div>
-  );
-};
-export default Profile;
+  )
+}
+export default Profile
