@@ -3,12 +3,12 @@ import './searchPrompt.scss'
 import Shape from '../../assets/Shape'
 import {ISearchPrompt} from './entities/ISearchPrompt'
 
-const SearchPrompt = ({
+const SearchPrompt: React.FC<ISearchPrompt> = ({
   isDark,
   onChange,
   onClick,
   notFound,
-}: ISearchPrompt): JSX.Element => {
+}) => {
   const defaultClass = `search-prompt`
   const custonClass = `${isDark ? `${defaultClass}--dark` : `${defaultClass}`}`
 

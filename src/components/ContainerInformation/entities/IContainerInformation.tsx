@@ -1,4 +1,4 @@
 export interface IContainerInformation {
   isDark: boolean
-  data: () => void
+  data: any
 }

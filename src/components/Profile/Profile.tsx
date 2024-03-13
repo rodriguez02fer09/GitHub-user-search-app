@@ -1,8 +1,9 @@
 import React from 'react'
 import './profile.scss'
-import imgProfile from '../../assets/ImgProfile.tsx'
+import imgProfile from '../../assets/ImgProfile/ImgProfile'
+import {IProfile} from './entities/IProfile'
 
-const Profile = ({isDark, data}) => {
+const Profile = ({isDark, data}: IProfile): JSX.Element => {
   const {avatar_url = imgProfile} = data
   const {
     name = 'The Octocat',

@@ -1,15 +1,13 @@
-.layout{
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    max-width: 100%;
-    overflow-x: hidden;
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
   background-color: var(--six-color-light);
-  &.dark{
-    background-color: #141d2f
+  &.dark {
+    background-color: #141d2f;
   }
 }
-
