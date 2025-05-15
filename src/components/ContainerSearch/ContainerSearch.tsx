@@ -16,7 +16,7 @@ const ContainerSearch = ({
   const apiGitHub = () => {
     fetch(`https://api.github.com/users/${user}`, {
       headers: {
-        Authorization: `Bearer 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`,
+        Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
       },
     })
       .then(response => {

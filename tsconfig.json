@@ -19,6 +19,7 @@
     "allowSyntheticDefaultImports": true // Permite importar módulos que no tienen una exportación por defecto
   },
   "include": [
+    "env.d.ts",
     "src/components/**/*.ts",
     "src/components/**/*.tsx",
     "src/card/**/*.ts",

@@ -8,7 +8,7 @@ const ProfileImg: React.FC<IProfileImg> = ({data}) => {
 
   return (
     <div className="main-profile">
-      <ImgProfile src={avatar_url} alt="" />
+      <ImgProfile src={avatar_url} />
     </div>
   )
 }
