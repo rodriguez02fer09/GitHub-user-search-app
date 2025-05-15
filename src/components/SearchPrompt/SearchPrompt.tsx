@@ -9,14 +9,14 @@ const SearchPrompt: React.FC<ISearchPrompt> = ({
   onClick,
   notFound,
 }) => {
-  const defaultClass = `search-prompt`
-  const custonClass = `${isDark ? `${defaultClass}--dark` : `${defaultClass}`}`
+  const baseClass = 'search-prompt'
+  const themeClass = isDark ? `${baseClass}--dark` : ''
 
   return (
-    <div className={`${defaultClass} ${custonClass}`}>
-      <div className={`${defaultClass}__container ${custonClass}__container`}>
+    <div className={`${baseClass} ${themeClass}`}>
+      <div className={`${baseClass}__container ${themeClass}__container`}>
         <input
-          className={`${defaultClass}__container-input ${custonClass}__container-input `}
+          className={`${baseClass}__container-input ${themeClass}__container-input`}
           onChange={onChange}
           placeholder="Search GitHub username..."
           type="text"
@@ -24,13 +24,13 @@ const SearchPrompt: React.FC<ISearchPrompt> = ({
           name="search"
         />
         {notFound && (
-          <div className={`${defaultClass}__error ${custonClass}__error `}>
+          <div className={`${baseClass}__error ${themeClass}__error`}>
             No results
           </div>
         )}
         <Shape />
         <button
-          className={`${defaultClass}__container-button ${custonClass}__container-button`}
+          className={`${baseClass}__container-button ${themeClass}__container-button`}
           type="submit"
           onClick={onClick}
         >
@@ -40,4 +40,5 @@ const SearchPrompt: React.FC<ISearchPrompt> = ({
     </div>
   )
 }
+
 export default SearchPrompt

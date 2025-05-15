@@ -26,10 +26,10 @@ const ContainerFollSocial = ({
   } = data
 
   const infoSocialNetwork = [
-    {name: dataLocation, img: isDark ? <LocationDark /> : <Location />}, //location
-    {name: dataLink, img: isDark ? <LinkDark /> : <Link />}, //Link
-    {name: dataTwiter, img: isDark ? <TwiterDark /> : <Twiter />}, //Twiter
-    {name: dataGitHub, img: isDark ? <GitHubDark /> : <GitHub />}, //GitHub
+    {name: dataLocation, img: isDark ? <LocationDark /> : <Location />},
+    {name: dataLink, img: isDark ? <LinkDark /> : <Link />},
+    {name: dataTwiter, img: isDark ? <TwiterDark /> : <Twiter />},
+    {name: dataGitHub, img: isDark ? <GitHubDark /> : <GitHub />},
   ]
 
   const infoFollowers = [
@@ -37,6 +37,7 @@ const ContainerFollSocial = ({
     {nameFollowers: 'Followers', count: followers},
     {nameFollowers: 'Following', count: following},
   ]
+
   return (
     <div className="Container-follSocial">
       <Followers infoFollowers={infoFollowers} isDark={isDark} />

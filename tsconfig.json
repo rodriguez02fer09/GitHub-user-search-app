@@ -1,22 +1,22 @@
 {
   "compilerOptions": {
-    "jsx": "react", // Indica que estás utilizando JSX con React
-    "target": "es5", // Especifica que el código TypeScript se compilará para ES5
-    "lib": ["dom", "dom.iterable", "esnext"], // Incluye las bibliotecas estándar necesarias para el proyecto
-    "allowJs": true, // Permite archivos JavaScript junto con TypeScript
-    "skipLibCheck": true, // Evita la comprobación de bibliotecas en los archivos de definición de tipo
-    "strict": true, // Habilita todas las opciones estrictas en TypeScript
-    "forceConsistentCasingInFileNames": true, // Obliga a que los nombres de archivo tengan la misma capitalización
-    "noEmit": true, // Evita que TypeScript genere archivos JavaScript al compilar
-    "noImplicitAny": true, // Evita el uso de 'any' implícito en el código
-    "noImplicitReturns": true, // Advierte si falta una declaración 'return' en algunas funciones
-    "esModuleInterop": true, // Permite el uso de imports 'default' desde módulos que no los tienen
-    "module": "esnext", // Especifica el formato de módulo para la compilación
-    "moduleResolution": "node", // Especifica cómo se resuelven los módulos
-    "resolveJsonModule": true, // Permite la importación de módulos JSON
-    "isolatedModules": true, // Asegura que cada archivo sea tratado como un módulo independiente
-    "incremental": true, // Habilita la compilación incremental
-    "allowSyntheticDefaultImports": true // Permite importar módulos que no tienen una exportación por defecto
+    "jsx": "react",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": [
     "env.d.ts",
@@ -29,5 +29,5 @@
     "src/layout/**/*.ts",
     "src/layout/**/*.tsx"
   ],
-  "exclude": ["node_modules"] // Excluye la carpeta 'node_modules' de la compilación
+  "exclude": ["node_modules"]
 }
