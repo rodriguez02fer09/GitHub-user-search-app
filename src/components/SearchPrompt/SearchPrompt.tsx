@@ -1,6 +1,6 @@
 import React from 'react'
 import './searchPrompt.scss'
-import Shape from '../../assets/Shape'
+
 import {ISearchPrompt} from './entities/ISearchPrompt'
 
 const SearchPrompt: React.FC<ISearchPrompt> = ({
@@ -28,7 +28,7 @@ const SearchPrompt: React.FC<ISearchPrompt> = ({
             No results
           </div>
         )}
-        <Shape />
+
         <button
           className={`${baseClass}__container-button ${themeClass}__container-button`}
           type="submit"
