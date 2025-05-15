@@ -1,10 +1,10 @@
 import React from 'react'
-import {ILayout} from '../Layout/interfaces/ILayout'
+import {IMode} from './entities/IMode'
 import './mode.scss'
-import imgDark from '../../assets/dark.svg'
-import imgLight from '../../assets/light.svg'
+import Dark from '../../assets/Dark/Dark'
+import Light from '../../assets/Light/Light'
 
-const Mode = ({isDark, toggleDarkMode}: ILayout): JSX.Element => {
+const Mode = ({isDark, toggleDarkMode}: IMode): JSX.Element => {
   return (
     <div className={`container-mode ${isDark ? 'dark' : ''}`}>
       <div className={`container-mode__title ${isDark ? 'dark' : ''}`}>
@@ -12,7 +12,11 @@ const Mode = ({isDark, toggleDarkMode}: ILayout): JSX.Element => {
       </div>
       <div className={`container-mode__dark ${isDark ? 'dark' : ''}`}>
         <p>{isDark ? 'LIGHT' : 'DARK'}</p>
-        <img src={isDark ? imgLight : imgDark} onClick={toggleDarkMode} />
+        {isDark ? (
+          <Light onClick={toggleDarkMode} />
+        ) : (
+          <Dark onClick={toggleDarkMode} />
+        )}
       </div>
     </div>
   )

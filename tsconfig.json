@@ -19,6 +19,7 @@
     "allowSyntheticDefaultImports": true
   },
   "include": [
+    "env.d.ts",
     "src/components/**/*.ts",
     "src/components/**/*.tsx",
     "src/card/**/*.ts",

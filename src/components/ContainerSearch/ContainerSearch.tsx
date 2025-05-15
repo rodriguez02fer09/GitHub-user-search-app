@@ -1,11 +1,14 @@
-import React, {useState} from 'react'
-import {ILayout} from '../Layout/interfaces/ILayout'
+import React, {useState, ChangeEvent} from 'react'
+import {IContainerSearch} from './entities/IContainerSearch'
 import './containerSearch.scss'
 import SearchPrompt from '../SearchPrompt/SearchPrompt'
 import SearchInformation from '../ContainerInformation/ContainerInformation'
 import Mode from '../Mode/Mode'
 
-const ContainerSearch = ({isDark, toggleDarkMode}: ILayout): JSX.Element => {
+const ContainerSearch = ({
+  isDark,
+  toggleDarkMode,
+}: IContainerSearch): JSX.Element => {
   const [data, setData] = useState({})
   const [user, setUser] = useState('')
   const [notFound, setNotFound] = useState(false)
@@ -13,7 +16,7 @@ const ContainerSearch = ({isDark, toggleDarkMode}: ILayout): JSX.Element => {
   const apiGitHub = () => {
     fetch(`https://api.github.com/users/${user}`, {
       headers: {
-        Authorization: `Bearer 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`,
+        Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
       },
     })
       .then(response => {
@@ -28,14 +31,22 @@ const ContainerSearch = ({isDark, toggleDarkMode}: ILayout): JSX.Element => {
       })
       .catch(error => console.error(error))
   }
-  const searchPrompt = ({target}) => {
+  const searchPrompt = (event: ChangeEvent<HTMLInputElement>) => {
     setNotFound(false)
-    setUser(() => target.value)
+    setUser(() => event.target.value)
   }
 
   return (
     <div className="containerSearch">
-      <Mode isDark={isDark} toggleDarkMode={toggleDarkMode} />
+      <Mode
+        isDark={isDark}
+        toggleDarkMode={toggleDarkMode}
+        onClick={function (
+          event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+        ): void {
+          throw new Error('Function not implemented.')
+        }}
+      />
       <SearchPrompt
         isDark={isDark}
         onChange={searchPrompt}
