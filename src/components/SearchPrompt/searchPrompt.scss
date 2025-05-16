@@ -2,41 +2,34 @@
   width: 730px;
   height: 73px;
   display: flex;
-
   margin-top: 40px;
 
   &__container {
-    width: 730px;
+    width: 100%;
     height: 70px;
     position: relative;
   }
 
   &__container-input {
-    width: 730px;
+    width: 100%;
     height: 69px;
     background-color: var(--five-color-light);
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
     border-radius: 15px;
-    left: 273px;
     border: none;
     padding-left: 80px;
     font-family: 'Space Mono';
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px;
     line-height: 25px;
-    /* identical to box height, or 139% */
     color: #222731;
-  }
 
-  &__container-input::placeholder {
-    font-family: 'Space Mono';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    /* identical to box height, or 139% */
-    color: #4b6a9b;
+    &::placeholder {
+      color: #4b6a9b;
+    }
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &__container-button {
@@ -45,124 +38,116 @@
     background-color: var(--primary-color-light);
     border-radius: 10px;
     font-family: 'Space Mono';
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     border: none;
     color: var(--secundary-color-dark);
-    position: relative;
-    left: 280px;
-    bottom: 60px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
-  &__container-button:hover {
-    cursor: pointer;
-  }
   &__container-img {
     width: 24px;
     height: 26px;
-    position: relative;
-    right: 270px;
-    bottom: 50px;
-
-    color: var (--primary-color-light);
+    position: absolute;
+    left: 32px;
+    top: 22px;
+    color: var(--primary-color-light);
   }
 
-  &--dark {
-    &__container-input {
-      background-color: #1e2a47;
-      color: white;
-    }
-
-    &__container-input::placeholder {
-      color: white;
-    }
-  }
   &__error {
-    width: 92px;
-    height: 22px;
+    position: absolute;
+    right: 140px;
+    top: 23px;
     font-family: 'Space Mono';
-    font-style: normal;
     font-weight: 700;
     font-size: 15px;
     line-height: 22px;
     color: #f74646;
-
-    position: absolute;
-    left: 500px;
-    top: 23px;
   }
-}
 
-@media (max-width: 768px) {
-  /*Los estilos se aplican para pantallas de ancho menor o igual al especificado */
+  // === DARK MODE ===
+  &--dark {
+    .search-prompt__container-input {
+      background-color: #1e2a47;
+      color: white;
 
-  .search-prompt {
-    width: 573px;
-    height: 69px;
-    &__container {
-      width: 573px;
-      height: 69px;
-      position: relative;
-    }
-    &__container-input {
-      width: 573px;
-      height: 69px;
-    }
-    &__container-button {
-      width: 106px;
-      height: 50px;
-      left: 207px;
-      bottom: 60px;
-    }
-    &__container-img {
-      right: 194px;
-      bottom: 51px;
-    }
+      &::placeholder {
+        color: white;
+      }
 
-    &--dark {
-      &__container-input {
+      &:focus {
         background-color: #1e2a47;
         color: white;
+        outline: none;
       }
+    }
 
-      &__container-input::placeholder {
-        color: white;
-      }
+    .search-prompt__container-button {
+      background-color: var(--primary-color-dark);
+    }
+
+    .search-prompt__container-img {
+      color: var(--primary-color-dark);
+    }
+    &__container-button {
+      color: aliceblue;
     }
   }
-}
 
-@media (max-width: 400px) {
-  /*Los estilos se aplican para pantallas de ancho menor o igual al especificado */
-  .search-prompt {
-    width: 327px;
-
-    margin-top: 30px;
+  // === RESPONSIVE ===
+  @media (max-width: 768px) {
+    width: 573px;
 
     &__container {
-      width: 327px;
-      height: 69px;
-      position: relative;
+      width: 100%;
     }
+
     &__container-input {
-      width: 327px;
-      height: 69px;
-      padding-left: 52px;
+      width: 100%;
     }
+
+    &__container-button {
+      right: 16px;
+    }
+
+    &__container-img {
+      left: 28px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    width: 327px;
+
+    &__container {
+      width: 100%;
+    }
+
+    &__container-input {
+      width: 100%;
+      padding-left: 52px;
+
+      &::placeholder {
+        font-size: 13px;
+      }
+    }
+
     &__container-button {
       width: 84px;
       height: 46px;
-      left: 102px;
-      bottom: 58px;
+      right: 12px;
+      top: 12px;
     }
+
     &__container-img {
-      right: 90px;
-      bottom: 51px;
-    }
-    &__container-input::placeholder {
-      font-size: 13px;
+      left: 24px;
+      top: 22px;
     }
   }
 }

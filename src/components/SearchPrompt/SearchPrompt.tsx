@@ -1,6 +1,5 @@
 import React from 'react'
 import './searchPrompt.scss'
-
 import {ISearchPrompt} from './entities/ISearchPrompt'
 
 const SearchPrompt: React.FC<ISearchPrompt> = ({
@@ -10,27 +9,23 @@ const SearchPrompt: React.FC<ISearchPrompt> = ({
   notFound,
 }) => {
   const baseClass = 'search-prompt'
-  const themeClass = isDark ? `${baseClass}--dark` : ''
+  const themeClass = `${isDark ? `${baseClass}--dark` : `${baseClass}`}`
 
   return (
     <div className={`${baseClass} ${themeClass}`}>
-      <div className={`${baseClass}__container ${themeClass}__container`}>
+      <div className={`${baseClass}__container`}>
         <input
-          className={`${baseClass}__container-input ${themeClass}__container-input`}
+          className={`${baseClass}__container-input`}
           onChange={onChange}
           placeholder="Search GitHub username..."
           type="text"
           id="search"
           name="search"
         />
-        {notFound && (
-          <div className={`${baseClass}__error ${themeClass}__error`}>
-            No results
-          </div>
-        )}
+        {notFound && <div className={`${baseClass}__error`}>No results</div>}
 
         <button
-          className={`${baseClass}__container-button ${themeClass}__container-button`}
+          className={`${baseClass}__container-button`}
           type="submit"
           onClick={onClick}
         >
