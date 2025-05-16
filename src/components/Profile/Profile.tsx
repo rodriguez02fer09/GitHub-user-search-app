@@ -4,6 +4,13 @@ import imgProfile from '../../assets/ImgProfile/ImgProfile'
 import {IProfile} from './entities/IProfile'
 
 const Profile = ({isDark, data}: IProfile): JSX.Element => {
+  const date = new Date(data.created_at)
+  const formattedDate = date.toLocaleDateString('es-ES', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  })
+
   const {avatar_url = imgProfile} = data
   const {
     name = 'The Octocat',
@@ -29,7 +36,7 @@ const Profile = ({isDark, data}: IProfile): JSX.Element => {
           <h3>{login}</h3>
         </div>
         <div className={`${defaultClass}__date ${custonClass}__date`}>
-          <h4>{created_at}</h4>
+          <h4>{formattedDate}</h4>
         </div>
       </div>
 
@@ -49,7 +56,7 @@ const Profile = ({isDark, data}: IProfile): JSX.Element => {
             <div className={`${defaultClass}__profile ${custonClass}__profile`}>
               <h1>{name}</h1>
               <h3>{login}</h3>
-              <h4>{created_at}</h4>
+              <h4>{formattedDate}</h4>
             </div>
           </div>
         </div>
