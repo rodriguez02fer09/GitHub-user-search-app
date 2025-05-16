@@ -1,12 +1,13 @@
 import React from 'react'
 import './profileImg.scss'
-import imgProfile from '../../assets/imgProfile.svg'
+import ImgProfile from '../../assets/ImgProfile/ImgProfile'
 
 const ProfileImg = ({data}) => {
-  const {avatar_url = imgProfile} = data
+  const {avatar_url} = data
+
   return (
     <div className="main-profile">
-      <img src={avatar_url} alt="" />
+      <ImgProfile src={avatar_url} />
     </div>
   )
 }
