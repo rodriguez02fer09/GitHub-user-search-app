@@ -4,18 +4,19 @@ import {IContainerInformation} from './entities/IContainerInformation'
 import ProfileImg from '../ProfileImg/ProfileImg'
 import SearchInformation from '../SearchInformation/SearchInformation'
 
-const ContainerInformation = ({
+const ContainerInformation: React.FC<IContainerInformation> = ({
   isDark,
   data,
-}: IContainerInformation): JSX.Element => {
-  const defaultClass = `container-information`
-  const custonClass = `${isDark ? `${defaultClass}--dark` : `${defaultClass}`}`
+}) => {
+  const defaultClass = 'container-information'
+  const customClass = isDark ? `${defaultClass}--dark` : ''
 
   return (
-    <div className={`${defaultClass} ${custonClass}`}>
+    <div className={`${defaultClass} ${customClass}`}>
       <ProfileImg data={data} />
       <SearchInformation isDark={isDark} data={data} />
     </div>
   )
 }
+
 export default ContainerInformation
