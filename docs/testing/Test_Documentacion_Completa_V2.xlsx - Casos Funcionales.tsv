@@ -1,0 +1,29 @@
+ID 	Título	Descripción	Precondiciones	Pasos para Ejecutar	Datos de Prueba	Resultado Esperado	Resultado Actual	Estado Actual (Aprobado/Falló)	Suite de	Nivel de prueba: Sistema	Técnica: Smoke/Regresión
+BÚSQUEDA											
+BÚS-01	Usuario válido (octocat)	 Verificar que la búsqueda de un usuario válido funcione correctamente	App abierta, red OK, DevTools abierto	1. Escribir "octocat" en el input de búsqueda,2. Presionar Enter,3. Observar el resultado	 Usuario "octocat"	Perfil renderizado (avatar, nombre, login, bio, repos, followers, following, fecha). Sin errores en consola. Tiempo de respuesta < 2 segundos.	funcionando	Aprobado	 Búsqueda de usuario	Sistema	funcional -smoke
+BÚS-02	Usuario inexistente	 Verificar respuesta ante usuario inexistente	App abierta, red OK, DevTools abierto	1. Escribir "__no_such_user__12345" en el input de búsqueda,2. Presionar Enter,3. Observar el resultado	__no_such_user__12345	Mensaje "No results" sin errores de consola; sin roturas de layout	funcionando	Aprobado	Búsqueda	Sistema	Smoke/Regresión
+BÚS-03	Input vacío	Verificar que al hacer una petición con el input vacío	App abierta, red OK, DevTools abierto	1. Dejar vacío el input de búsqueda. 2. Presionar Enter o el botón de búsqueda. 3. Observar el comportamiento del sistema.	vacío	La app debe mostrar un mensaje tipo "No has realizado ninguna búsqueda" o "Por favor ingresa un usuario". No se debe enviar ninguna petición a la API (Network sin request).	funcionando	Aprobado	Búsqueda	Sistema	Smoke/Regresión
+BÚS-04	Repetir búsquedas	Verificar estabilidad al realizar varias búsquedas consecutivas	App abierta, red OK, DevTools abierto	1. Buscar "octocat",2. Buscar "torvalds",3. Buscar "gaearon",4. Buscar "ricardo"	octocat, torvalds, gaearon, ricardo	Resultados correctos en cada búsqueda; UI fluida; sin errores en consola	funcionando	Aprobado	Búsqueda	Sistema	Regresión
+RESULTADOS											
+RES-01	Bio/Blog/Twitter/Location nulos										
+RES-02	Enlace GitHub										
+RES-03	Blog sin protocolo										
+ERRORES											
+ERR-01	Offline										
+ERR-02	Lento (Fast 3G)										
+ERR-03	Rate limit										
+ UI/TEMA											
+UI-01	Toggle claro/oscuro										
+UI-02	Responsive										
+UI-03	Persistencia de tema										
+ACCESIBILIDAD											
+A11Y-01	Navegación por teclado										
+A11Y-02	Etiquetas del input										
+SEGURIDAD											
+SEC-01	Sanitización de enlaces										
+SEC-02	Manejo de texto largo										
+											
+											
+	check list 										
+	funciona										
+	no funciona										

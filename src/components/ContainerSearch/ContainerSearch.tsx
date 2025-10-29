@@ -45,11 +45,7 @@ const ContainerSearch = ({
 
   return (
     <div className="containerSearch">
-      <Mode
-        isDark={isDark}
-        toggleDarkMode={toggleDarkMode}
-        onClick={() => {}}
-      />
+      <Mode isDark={isDark} toggleDarkMode={toggleDarkMode} />
       <SearchPrompt
         isDark={isDark}
         onChange={searchPrompt}

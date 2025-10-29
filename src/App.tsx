@@ -5,13 +5,7 @@ import './App.scss'
 const App = (): JSX.Element => {
   return (
     <div className="App">
-      <Layout
-        defaultClass={'layout'}
-        isDark={false}
-        toggleDarkMode={function (): void {
-          throw new Error('Function not implemented.')
-        }}
-      />
+      <Layout defaultClass={'layout'} isDark={false} />
     </div>
   )
 }
