@@ -14,9 +14,15 @@ const ContainerSearch = ({
   const [notFound, setNotFound] = useState(false)
 
   const apiGitHub = () => {
+    if (!user.trim()) {
+      alert('Por favor ingresa un usuario válido')
+      return
+    }
+
     fetch(`https://api.github.com/users/${user}`, {
       headers: {
-        Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
+        Authorization: `token ${import.meta.env.VITE_GITHUB_TOKEN}`,
+        Accept: 'application/vnd.github.v3+json',
       },
     })
       .then(response => {
@@ -31,9 +37,10 @@ const ContainerSearch = ({
       })
       .catch(error => console.error(error))
   }
+
   const searchPrompt = (event: ChangeEvent<HTMLInputElement>) => {
     setNotFound(false)
-    setUser(() => event.target.value)
+    setUser(event.target.value)
   }
 
   return (
@@ -41,11 +48,7 @@ const ContainerSearch = ({
       <Mode
         isDark={isDark}
         toggleDarkMode={toggleDarkMode}
-        onClick={function (
-          event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
-        ): void {
-          throw new Error('Function not implemented.')
-        }}
+        onClick={() => {}}
       />
       <SearchPrompt
         isDark={isDark}
