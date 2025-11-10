@@ -19,7 +19,13 @@ const Layout = ({
 
   return (
     <div className={`${defaultClass} ${isDark ? 'dark' : ''}`}>
-      <ContainerSearch isDark={isDark} toggleDarkMode={toggleDarkMode} />
+      <ContainerSearch
+        isDark={isDark}
+        toggleDarkMode={toggleDarkMode}
+        onClick={(event: React.MouseEvent<SVGElement, MouseEvent>) => {
+          throw new Error('Function not implemented.')
+        }}
+      />
     </div>
   )
 }
